@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAT Practice Test 10 Answer Key</title>
+  <meta name="description" content="Answer key and step-by-step explanations for all 120 questions on SAT Practice Test 10, with a paper-test scorer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/answers.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231a8a5a%27/%3E%3Cpath d=%27M9 16.5l4.5 4.5L23 11%27 stroke=%27white%27 stroke-width=%273.2%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark key-mark" aria-hidden="true">✓</span>
+      <span class="brand-text">SAT Practice Test 10 · <strong>Answer Key</strong></span>
+    </a>
+    <div class="header-actions">
+      <button class="btn sm" id="printBtn" title="Print or save as PDF">Print</button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="key-page">
+    <section class="hero key-hero">
+      <div class="eyebrow">Answers and explanations</div>
+      <h1>SAT Practice Test 10: Answer Key</h1>
+      <p>Every answer for all four modules, a scorer for checking a test you took on paper, and a step-by-step walkthrough of all 120 questions, including why each wrong choice is wrong.</p>
+      <div class="verified"><span aria-hidden="true">✓</span> All 120 answers match the official College Board answer key for Practice Test 10.</div>
+      <nav class="jump-chips" aria-label="Jump to section">
+        <a href="#key">Answer key</a>
+        <a href="#explanations">Explanations</a>
+        <a href="#exp-rw1">R&amp;W Module 1</a>
+        <a href="#exp-rw2">R&amp;W Module 2</a>
+        <a href="#exp-math1">Math Module 1</a>
+        <a href="#exp-math2">Math Module 2</a>
+      </nav>
+    </section>
+
+    <section id="key" class="key-section">
+      <div class="section-head">
+        <h2>Answer key</h2>
+        <p>Type or pick your answers in the <b>Yours</b> column to score a paper test. Grading is instant and your entries stay in this browser. Click a question number to open its explanation.</p>
+        <div class="key-tools">
+          <label class="switch"><input type="checkbox" id="hideKey"> Hide correct answers while I enter mine</label>
+          <button class="btn sm" id="clearAll">Clear my answers</button>
+        </div>
+      </div>
+      <div class="score-summary" id="scoreSummary"></div>
+      <div class="key-grid" id="keyGrid"></div>
+    </section>
+
+    <section id="explanations" class="key-section">
+      <div class="section-head">
+        <h2>Step-by-step explanations</h2>
+        <p>Each walkthrough shows the reasoning in order, then explains why every other choice fails.</p>
+      </div>
+      <div class="exp-toolbar">
+        <div class="seg" role="group" aria-label="Module filter" id="modFilter"></div>
+        <select id="domainFilter" aria-label="Filter by skill area"><option value="">All skill areas</option></select>
+        <select id="resultFilter" aria-label="Filter by your result">
+          <option value="">All questions</option>
+          <option value="no">Ones I missed</option>
+          <option value="skip">Ones I left blank</option>
+        </select>
+        <input type="search" id="search" placeholder="Search questions or skills…" aria-label="Search explanations">
+        <span class="spacer"></span>
+        <button class="btn sm" data-expand="1">Expand all</button>
+        <button class="btn sm" data-expand="0">Collapse all</button>
+      </div>
+      <p class="filter-count" id="filterCount" aria-live="polite"></p>
+      <div id="expList"></div>
+    </section>
+
+    <footer class="key-foot">
+      <p>Answers checked against the official College Board answer explanations for SAT Practice Test 10. Walkthroughs are written independently to teach the reasoning. Score a test online at <a href="https://satsuite.collegeboard.org/digital/digital-practice-preparation" rel="noopener">sat.org/digital-practice</a>.</p>
+    </footer>
+  </main>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+  <script src="js/figures.js"></script>
+  <script src="data/rw1.js"></script>
+  <script src="data/rw2.js"></script>
+  <script src="data/math1.js"></script>
+  <script src="data/math2.js"></script>
+  <script src="data/rw-steps.js"></script>
+  <script src="js/answers.js"></script>
+</body>
+</html>

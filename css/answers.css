@@ -1,0 +1,103 @@
+/* Answer-key page. Builds on the tokens and components in styles.css. */
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+.brand { text-decoration: none; color: inherit; }
+.key-mark { background: var(--good); font-size: 17px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.key-page { max-width: 1180px; margin: 0 auto; padding: 32px 20px 80px; }
+.key-hero { margin-bottom: 8px; }
+.verified {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 6px; padding: 9px 14px; border-radius: 10px;
+  background: var(--good-soft); color: var(--good); font-weight: 600; font-size: 14px; width: fit-content;
+}
+.jump-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.jump-chips a {
+  padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface);
+  color: var(--ink-2); font-size: 13px; font-weight: 600; text-decoration: none;
+}
+.jump-chips a:hover { border-color: var(--accent); color: var(--accent); }
+
+.key-section { margin-top: 40px; }
+.section-head h2 { margin: 0 0 6px; font-size: 24px; letter-spacing: -.01em; }
+.section-head p { margin: 0 0 12px; color: var(--ink-2); max-width: 760px; }
+.key-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 14px; }
+.switch { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; cursor: pointer; }
+.switch input { width: 17px; height: 17px; accent-color: var(--accent); }
+.score-summary { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.score-summary:empty { display: none; }
+
+/* key tables */
+.key-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; align-items: start; }
+.key-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.key-card header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.key-card h3 { margin: 0; font-size: 15px; }
+.key-card.rw h3 { color: var(--vocab); }
+.key-card.math h3 { color: var(--plot-2); }
+.key-score { font-size: 13px; font-weight: 700; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.key-table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.key-table th { font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); font-weight: 700; padding: 6px 8px; text-align: center; background: var(--surface-2); }
+.key-table td { padding: 3px 8px; text-align: center; border-top: 1px solid var(--line); height: 34px; }
+.key-table td:first-child { width: 34px; }
+.key-table .qlink { font-weight: 700; color: var(--ink-2); text-decoration: none; }
+.key-table .qlink:hover { color: var(--accent); text-decoration: underline; }
+.key-table .ans span { display: inline-block; min-width: 28px; font-weight: 700; color: var(--ink); }
+.key-table td.mark { width: 26px; font-weight: 700; }
+.key-table tr.r-ok td.mark { color: var(--good); }
+.key-table tr.r-no td.mark { color: var(--bad); }
+.key-table tr.r-ok { background: color-mix(in srgb, var(--good-soft) 60%, transparent); }
+.key-table tr.r-no { background: color-mix(in srgb, var(--bad-soft) 60%, transparent); }
+.key-table input.your {
+  width: 100%; max-width: 76px; padding: 4px 6px; border-radius: 7px; border: 1px solid var(--line-2);
+  background: var(--surface); text-align: center; font: 600 14px var(--mono); text-transform: uppercase;
+}
+.key-table input.mc-in { max-width: 40px; }
+.key-table input.your:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.key-grid.hide-key .ans span { color: transparent; background: var(--surface-3); border-radius: 5px; }
+.key-grid.hide-key tr.r-ok .ans span, .key-grid.hide-key tr.r-no .ans span { color: var(--ink); background: none; }
+
+/* explanations */
+.exp-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; position: sticky; top: 57px; z-index: 10; padding: 10px 0; background: var(--bg); }
+.exp-toolbar .spacer { flex: 1; }
+.exp-toolbar select, .exp-toolbar input[type="search"] {
+  padding: 7px 10px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--surface); font-size: 13.5px;
+}
+.exp-toolbar input[type="search"] { min-width: 200px; }
+.seg button { white-space: nowrap; }
+.filter-count { margin: 4px 0 14px; font-size: 13px; color: var(--ink-3); }
+.exp-module-title { margin: 28px 0 12px; font-size: 18px; display: flex; align-items: baseline; gap: 10px; }
+.exp-module-title span { font-size: 13px; font-weight: 500; color: var(--ink-3); }
+.exp-module:first-child .exp-module-title { margin-top: 8px; }
+.key-badge { background: var(--good-soft); color: var(--good); }
+.your-badge.ok { background: var(--good-soft); color: var(--good); }
+.your-badge.no { background: var(--bad-soft); color: var(--bad); }
+.exp-card > summary { flex-wrap: wrap; }
+
+.key-foot { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-3); }
+.key-foot a { color: var(--accent); }
+
+.to-top {
+  position: fixed; right: 20px; bottom: 20px; z-index: 30; width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font-size: 18px; box-shadow: var(--shadow);
+}
+
+@media (max-width: 1100px) { .key-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .key-page { padding: 22px 16px 60px; }
+  .key-grid { grid-template-columns: 1fr; }
+  .exp-toolbar { position: static; }
+  .exp-toolbar input[type="search"], .exp-toolbar select { flex: 1 1 100%; }
+  .seg { overflow-x: auto; max-width: 100%; }
+  .brand-text { font-size: 13px; }
+}
+
+@media print {
+  .site-header, .key-tools, .exp-toolbar, .filter-count, .jump-chips, .to-top, .key-foot a { display: none !important; }
+  body { background: #fff; color: #000; }
+  .key-page { padding: 0; }
+  .key-grid { grid-template-columns: repeat(4, 1fr); }
+  .key-table input.your { border: 0; }
+  .exp-card { break-inside: auto; box-shadow: none; }
+  .exp-card > summary .chev { display: none; }
+  .q-recap > div { display: block; }
+}
