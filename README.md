@@ -4,6 +4,8 @@ A standalone answer key and step-by-step explanation site for SAT Practice Test 
 
 All 120 answers were checked against the official College Board answer explanations for Practice Test 10. The walkthroughs are written independently to teach the reasoning.
 
+**Languages:** English (`/`) and Turkish (`/tr/`). Use the EN/TR button in the header to switch. On the Turkish page the questions stay in English, as on the real SAT; the walkthroughs, why-correct/why-wrong notes, takeaways, vocabulary definitions, skill names, and interface are in Turkish.
+
 ## What's included
 - **Answer key** for Reading and Writing Modules 1–2 and Math Modules 1–2
 - **Paper-test scorer**: type your answers next to the key and get instant right/wrong marks and totals (optionally hide the key while entering). Entries are saved in your browser only.
@@ -23,9 +25,10 @@ python -m http.server 8766
 Then open http://localhost:8766.
 
 ## Structure
-- `index.html` — page shell
+- `index.html` — English page shell; `tr/index.html` — Turkish page shell
 - `css/styles.css` — shared design tokens and components; `css/answers.css` — answer-key layout
 - `js/answers.js` — key tables, scorer, filters, explanation cards
 - `js/figures.js` — SVG graph and table builders
 - `data/rw1.js`, `data/rw2.js`, `data/math1.js`, `data/math2.js` — questions, answers, explanations
 - `data/rw-steps.js` — step-by-step walkthroughs for the Reading and Writing questions
+- `data/tr/` — Turkish translations: `common.js` (skill/area names), `rw1.js`, `rw2.js`, `math1.js`, `math2.js` (explanations per question)

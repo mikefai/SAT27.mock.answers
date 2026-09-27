@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAT Deneme Sınavı 10 Cevap Anahtarı</title>
+  <meta name="description" content="SAT Deneme Sınavı 10'daki 120 sorunun cevap anahtarı ve adım adım Türkçe çözümleri; kâğıt sınav puanlayıcısıyla birlikte.">
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/answers.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231a8a5a%27/%3E%3Cpath d=%27M9 16.5l4.5 4.5L23 11%27 stroke=%27white%27 stroke-width=%273.2%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Başa dön">
+      <span class="brand-mark key-mark" aria-hidden="true">✓</span>
+      <span class="brand-text">SAT Deneme Sınavı 10 · <strong>Cevap Anahtarı</strong></span>
+    </a>
+    <div class="header-actions">
+      <a class="btn sm lang-link" href="../" hreflang="en" lang="en" title="Read in English">EN</a>
+      <button class="btn sm" id="printBtn" title="Yazdır veya PDF olarak kaydet">Yazdır</button>
+      <button class="icon-btn" id="themeToggle" aria-label="Karanlık modu aç/kapat" title="Karanlık mod">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="key-page">
+    <section class="hero key-hero">
+      <div class="eyebrow">Cevaplar ve çözümler</div>
+      <h1>SAT Deneme Sınavı 10: Cevap Anahtarı</h1>
+      <p>Dört modülün tüm cevapları, kâğıt üzerinde çözdüğün sınavı puanlamak için bir araç ve 120 sorunun tamamı için adım adım çözüm; her yanlış şıkkın neden yanlış olduğu da dahil.</p>
+      <div class="verified"><span aria-hidden="true">✓</span> 120 cevabın tamamı, College Board'un Deneme Sınavı 10 resmî cevap anahtarıyla örtüşüyor.</div>
+      <p class="lang-note">Sorular, gerçek SAT'teki gibi İngilizce bırakıldı; çözümler, ipuçları ve kelime açıklamaları Türkçedir.</p>
+      <nav class="jump-chips" aria-label="Bölüme git">
+        <a href="#key">Cevap anahtarı</a>
+        <a href="#explanations">Çözümler</a>
+        <a href="#exp-rw1">O&amp;Y Modül 1</a>
+        <a href="#exp-rw2">O&amp;Y Modül 2</a>
+        <a href="#exp-math1">Matematik Modül 1</a>
+        <a href="#exp-math2">Matematik Modül 2</a>
+      </nav>
+    </section>
+
+    <section id="key" class="key-section">
+      <div class="section-head">
+        <h2>Cevap anahtarı</h2>
+        <p>Kâğıt sınavını puanlamak için cevaplarını <b>Senin</b> sütununa yaz ya da seç. Puanlama anında yapılır ve girdiğin cevaplar yalnızca bu tarayıcıda saklanır. Bir sorunun çözümünü açmak için numarasına tıkla.</p>
+        <div class="key-tools">
+          <label class="switch"><input type="checkbox" id="hideKey"> Ben cevaplarımı girerken doğru cevapları gizle</label>
+          <button class="btn sm" id="clearAll">Cevaplarımı temizle</button>
+        </div>
+      </div>
+      <div class="score-summary" id="scoreSummary"></div>
+      <div class="key-grid" id="keyGrid"></div>
+    </section>
+
+    <section id="explanations" class="key-section">
+      <div class="section-head">
+        <h2>Adım adım çözümler</h2>
+        <p>Her çözüm önce düşünme sürecini sırayla gösterir, ardından diğer şıkların neden elendiğini açıklar.</p>
+      </div>
+      <div class="exp-toolbar">
+        <div class="seg" role="group" aria-label="Modül filtresi" id="modFilter"></div>
+        <select id="domainFilter" aria-label="Beceri alanına göre filtrele"><option value="">Tüm beceri alanları</option></select>
+        <select id="resultFilter" aria-label="Sonucuna göre filtrele">
+          <option value="">Tüm sorular</option>
+          <option value="no">Yanlış yaptıklarım</option>
+          <option value="skip">Boş bıraktıklarım</option>
+        </select>
+        <input type="search" id="search" placeholder="Soru veya beceri ara…" aria-label="Çözümlerde ara">
+        <span class="spacer"></span>
+        <button class="btn sm" data-expand="1">Tümünü aç</button>
+        <button class="btn sm" data-expand="0">Tümünü kapat</button>
+      </div>
+      <p class="filter-count" id="filterCount" aria-live="polite"></p>
+      <div id="expList"></div>
+    </section>
+
+    <footer class="key-foot">
+      <p>Cevaplar College Board'un SAT Deneme Sınavı 10 resmî cevap açıklamalarıyla karşılaştırılarak doğrulandı. Çözümler, düşünme yolunu öğretmek amacıyla bağımsız olarak yazıldı. Sınavını çevrim içi puanlamak için: <a href="https://satsuite.collegeboard.org/digital/digital-practice-preparation" rel="noopener">sat.org/digital-practice</a>.</p>
+    </footer>
+  </main>
+
+  <button class="to-top" id="toTop" aria-label="Başa dön" hidden>↑</button>
+
+  <script src="../js/figures.js"></script>
+  <script src="../data/rw1.js"></script>
+  <script src="../data/rw2.js"></script>
+  <script src="../data/math1.js"></script>
+  <script src="../data/math2.js"></script>
+  <script src="../data/rw-steps.js"></script>
+  <script src="../data/tr/common.js"></script>
+  <script src="../data/tr/rw1.js"></script>
+  <script src="../data/tr/rw2.js"></script>
+  <script src="../data/tr/math1.js"></script>
+  <script src="../data/tr/math2.js"></script>
+  <script src="../js/answers.js"></script>
+</body>
+</html>
